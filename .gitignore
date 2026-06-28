@@ -1,0 +1,22 @@
+# Local secrets and generated state
+work/
+*.state.json
+canton_lab_state*.json
+*.key
+*.pem
+*.p8
+*.p12
+*.env
+.env*
+
+# Logs and caches
+*.log
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
