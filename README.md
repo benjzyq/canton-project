@@ -10,7 +10,8 @@ This repository contains the public verification artifacts for Workshop 1:
 - Topology submitted: `yes`
 - Transfer preapproval visible: `yes`
 - Transfer preapproval contracts visible through ACS: `1`
-- Holding contracts visible through ACS: `0`
+- Holding contracts visible through ACS: `1`
+- Holding amount visible through the Token Standard Holding interface: `100.0000000000` CC
 
 The full sanitized run report is in [WORKSHOP_REPORT.md](WORKSHOP_REPORT.md).
 

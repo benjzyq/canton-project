@@ -1,6 +1,6 @@
 # Canton DevNet Low-Level Lab Report
 
-Generated UTC: 2026-06-28T20:00:15.872443+00:00
+Generated UTC: 2026-06-29T02:35:31.758636+00:00
 
 No OAuth secret or private key material is included in this report.
 
@@ -16,22 +16,25 @@ No OAuth secret or private key material is included in this report.
 - External party topology submitted: `yes`
 - Transfer preapproval visible: `yes`
 - Transfer preapproval contracts visible via ACS: `1`
-- Ledger ACS query offset: `2182949`
-- Holding contracts visible for the external party: `0`
+- Ledger ACS query offset: `2186747`
+- Holding contracts visible for the external party: `1`
+- Holding amount visible through the Token Standard Holding interface: `100.0000000000` CC
 - Transfer preapproval contract id: `00c4b7fa983d8aac50121c6003d3250dd9f5e4fe5e0e6eb419f0c13c300712d881ca1212200be10098b9c6ac4be39fd7e7b985330c97b1fd3981386f39bc22e2539c83a702`
 
-## Remaining External Action
+## Holding Contract IDs
 
-Canton Coins are not minted by this script. Ask the DevNet team to send CC to the external party above, then rerun the script to refresh the Holding ACS query.
+- `004b9f6fd43579b049a58e168940f1968c0140e397d58be8636d9df5a2f944e4e1ca12122073cdcc5d70e775f8d0e4104331c63970f3b34993e8338e4c0e08961da8b3a32c`
 
-Optional Token Standard transfer was not executed because no funded balance and no recipient party were provided.
+## Remaining Optional Action
+
+The optional Token Standard transfer step was not executed because no recipient party was provided.
 
 ## Rerun
 
 ```powershell
 $env:CANTON_CLIENT_ID='hackathon'
 $env:CANTON_CLIENT_SECRET='<from the lab document>'
-python outputs\canton_low_level_lab.py --report outputs\canton_lab_report.md
+python canton_low_level_lab.py --state work\canton_lab_state_benjbenj.json --report WORKSHOP_REPORT.md
 ```
 
 The default path uses external-party topology plus Ledger interactive submission. The validator setup-proposal helper is only used when rerun with `--allow-setup-proposal-fallback`.
